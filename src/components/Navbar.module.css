@@ -1,0 +1,41 @@
+:root {
+  --secondary-font: "Poppins", sans-serif;
+  --secondary-color: #6b6b6b;
+}
+
+body {
+  font-family: var(--secondary-font);
+}
+
+.links {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0px auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 0px 10px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
