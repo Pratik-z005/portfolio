@@ -26,18 +26,28 @@ const AboutPage = () => {
 
         <div className={css.content}>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            ab molestiae impedit ipsum, labore iste architecto aperiam tempora
-            odit, quas magnam? Fuga maiores fugiat quasi velit? Odio, minima hic
-            consectetur, deleniti necessitatibus sapiente error eum enim
-            corporis dolorem non quibusdam, cumque optio harum cum quae est
-            nostrum illum eius velit!\
+            I'm from India, and an aspiring Full-Stack Developer passionate
+            about building modern web applications and constantly improving my
+            problem-solving and development skills.
+            <br />
+            <br />
+            Currently pursuing my Bachelor's in Computer Engineering at SPPU
+            University, Pune.I enjoy building responsive web applications and
+            continuously improving my skills in modern web technologies.
+            <br />
+            <br />
+            What I enjoy most about web development is the ability to combine
+            problem-solving with creativity. I like building responsive and
+            scalable applications while continuously learning modern
+            technologies and improving my development skills.
           </p>
         </div>
       </div>
 
       <div className={css.educationBox}>
         <p className={css.para}>
+          <span>Education & certifications</span>
+          <br />
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
           sunt autem et tempore ex velit, nesciunt porro, labore ratione a
           recusandae adipisci praesentium repellat, quia aliquam reprehenderit
@@ -56,6 +66,8 @@ const AboutPage = () => {
       <div className={css.container}>
         <div className={css.content}>
           <p>
+            <span>Some facts about me...</span>
+            <br />
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             ab molestiae impedit ipsum, labore iste architecto aperiam tempora
             odit, quas magnam? Fuga maiores fugiat quasi velit? Odio, minima hic

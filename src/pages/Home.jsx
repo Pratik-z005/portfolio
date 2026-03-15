@@ -8,7 +8,13 @@ import Footer from "../components/Footer";
 // css!
 import "../index.css";
 
+// project-images!
+import FoodRecipeImg from "/src/assets/photos/food-recipe-project-pic.png";
+import GhibliImg from "/src/assets/photos/ghibli-app-pic.png";
+
 const Home = () => {
+  const foodAppLink = "https://food-recipe-brown-one.vercel.app/";
+  const ghibliAppLink = "https://my-ghibli-world.vercel.app/";
   return (
     <>
       <Navbar />
@@ -20,8 +26,8 @@ const Home = () => {
         <h2>My Projects</h2>
 
         <ProjectCompo />
-        <ProjectCompo />
-        <ProjectCompo />
+        <ProjectCompo pic={FoodRecipeImg} link={foodAppLink} />
+        <ProjectCompo pic={GhibliImg} link={ghibliAppLink} />
       </div>
 
       <Footer />
