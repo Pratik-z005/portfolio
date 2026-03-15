@@ -17,6 +17,7 @@
   height: 150px;
   background-color: aqua;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .nameContainer {
@@ -26,6 +27,14 @@
 .content {
   margin-top: 20px;
   padding: 20px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .educationBox {

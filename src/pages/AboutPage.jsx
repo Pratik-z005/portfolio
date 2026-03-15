@@ -7,13 +7,18 @@ import Footer from "../components/Footer";
 // css!
 import css from "./AboutPage.module.css";
 
+// assets!
+import Profile from "/src/assets/photos/Pratik Black_Suit.jpeg";
+
 const AboutPage = () => {
   return (
     <>
       <Navbar />
       <div className={css.container}>
         <div className={css.flexContainer}>
-          <div className={css.imgContainer}>{/* <img src="" alt="" /> */}</div>
+          <div className={css.imgContainer}>
+            <img className={css.img} src={Profile} alt="" />
+          </div>
           <div className={css.nameContainer}>
             <h1>Pratik Kamble</h1>
           </div>
