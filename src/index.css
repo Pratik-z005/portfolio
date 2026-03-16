@@ -52,3 +52,11 @@ footer {
   margin: 0px 10px;
   font-size: 0.01rem;
 }
+
+@media screen and (max-width: 900px) {
+  .information {
+    font-size: 1.3rem;
+    padding: 5px 0px 15px;
+    padding-left: 20px;
+  }
+}

@@ -39,3 +39,25 @@ li {
   font-weight: 500;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0px;
+    margin: 0px;
+    padding-left: 20px;
+  }
+  .logo {
+    display: inline-block;
+    width: auto;
+    padding-bottom: 5px;
+  }
+  ul {
+    width: auto;
+    padding: 5px 0px;
+  }
+}
