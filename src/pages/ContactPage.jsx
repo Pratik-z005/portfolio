@@ -13,7 +13,7 @@ const ContactPage = () => {
       <Navbar />
       <form className={css.container}>
         <div className={css.content}>
-          <p>
+          <p className={css.contactInfo}>
             Contact If you have any questions or requests involving my work,
             feel free to contact me through any of my SNS or using the form
             below.
