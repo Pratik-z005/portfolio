@@ -65,6 +65,13 @@
     padding: 20px;
   }
   .imgContainer {
+    width: 125px;
+    height: 125px;
     margin-left: 20px;
+  }
+  .nameContainer {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 10px;
   }
 }
