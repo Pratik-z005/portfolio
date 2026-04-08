@@ -10,7 +10,7 @@ import "../index.css";
 
 // project-images!
 import FoodRecipeImg from "/src/assets/photos/food-black.png";
-import GhibliImg from "/src/assets/photos/ghibli-app-pic.png";
+import GhibliImg from "/src/assets/photos/ghibli.png";
 
 const Home = () => {
   const foodAppLink = "https://food-recipe-brown-one.vercel.app/";
