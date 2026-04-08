@@ -17,7 +17,7 @@
 .imgContainer {
   width: 150px;
   height: 150px;
-  background-color: aqua;
+  background-color: #e6e6e6b1;
   border-radius: 50%;
   overflow: hidden;
 }

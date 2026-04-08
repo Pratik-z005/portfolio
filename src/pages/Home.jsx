@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import "../index.css";
 
 // project-images!
-import FoodRecipeImg from "/src/assets/photos/food-recipe-project-pic.png";
+import FoodRecipeImg from "/src/assets/photos/food-black.png";
 import GhibliImg from "/src/assets/photos/ghibli-app-pic.png";
 
 const Home = () => {
@@ -23,7 +23,10 @@ const Home = () => {
           I'm Pratik, an aspiring Full Stack Developer passionate about building
           modern web applications.
         </h2>
+        <br />
         <h2>My Projects</h2>
+        <br />
+        <br />
 
         <ProjectCompo />
         <ProjectCompo pic={FoodRecipeImg} link={foodAppLink} />

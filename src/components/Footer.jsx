@@ -3,8 +3,13 @@ import React from "react";
 // css!
 import "../index.css";
 
-// lucide-react!
-import { Github, Linkedin, Instagram } from "lucide-react";
+// font-awesome!
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedinIn,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -16,9 +21,11 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="links"
         >
-          <div className="icon">
-            <Github />
-          </div>
+          <FontAwesomeIcon
+            className="icons"
+            icon={faGithub}
+            style={{ color: "#000" }}
+          />
         </a>
 
         <a
@@ -27,14 +34,20 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="links"
         >
-          <div className="icon">
-            <Linkedin />
-          </div>
+          <FontAwesomeIcon className="icons" icon={faLinkedinIn} />
         </a>
 
-        <div className="icon">
-          <Instagram />
-        </div>
+        <a
+          href="https://instagram.com/your-username"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="icons"
+            icon={faInstagram}
+            style={{ color: "#000" }}
+          />
+        </a>
       </footer>
     </>
   );
