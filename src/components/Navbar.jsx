@@ -17,10 +17,14 @@ const Navbar = () => {
           <Link to={"/about"} className={css.links}>
             <li>About</li>
           </Link>
+          <Link to={"/"} className={css.links}>
+            <li>Projects</li>
+          </Link>
           <Link to={"/contact"} className={css.links}>
             <li>Contact</li>
           </Link>
         </ul>
+        <div className="modoIcon">M</div>
       </nav>
     </>
   );

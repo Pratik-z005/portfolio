@@ -1,9 +1,12 @@
 import React from "react";
 
+// react-router!
+import { Link } from "react-router-dom";
+
 // css!
 import css from "./ProjectCompo.module.css";
 
-const ProjectCompo = ({ pic, link }) => {
+const ProjectCompo = ({ pic, link, title }) => {
   return (
     <>
       <div className={css.container}>
@@ -13,11 +16,20 @@ const ProjectCompo = ({ pic, link }) => {
           </a>
         </div>
         <div className={css.infoContainer}>
-          <h3>title</h3>
+          <h3>{title}</h3>
+          <br />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
             porro.
           </p>
+          <div className="siteLinks">
+            <button className={css.grayBtns}>
+              <Link className="links">Site</Link>
+            </button>
+            <button className={css.grayBtns}>
+              <Link className="links">Code</Link>
+            </button>
+          </div>
         </div>
       </div>
     </>

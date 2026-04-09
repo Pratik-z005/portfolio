@@ -24,7 +24,7 @@ const Footer = () => {
           <FontAwesomeIcon
             className="icons"
             icon={faGithub}
-            style={{ color: "#000" }}
+            style={{ padding: "10px" }}
           />
         </a>
 
@@ -34,7 +34,11 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="links"
         >
-          <FontAwesomeIcon className="icons" icon={faLinkedinIn} />
+          <FontAwesomeIcon
+            className="icons"
+            icon={faLinkedinIn}
+            style={{ padding: "10px" }}
+          />
         </a>
 
         <a
@@ -45,7 +49,7 @@ const Footer = () => {
           <FontAwesomeIcon
             className="icons"
             icon={faInstagram}
-            style={{ color: "#000" }}
+            style={{ color: "#000", padding: "10px" }}
           />
         </a>
       </footer>

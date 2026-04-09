@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* background-color: #f6f0df; */
 }
 
 :root {
@@ -19,10 +20,54 @@ body {
   margin: 0px auto;
 }
 
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 50%;
+  padding: 0px;
+}
+
+.objInfo {
+  line-height: 1.5;
+}
+
+.btns {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1.1px solid #000;
+  border-radius: 5px;
+}
+.btns:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.imgbox {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.realImg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .links {
   text-decoration: none;
   color: #000;
-  padding: 10px;
 }
 
 .icons {
