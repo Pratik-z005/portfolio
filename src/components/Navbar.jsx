@@ -1,12 +1,31 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 // react-router!
 import { Link } from "react-router-dom";
 
 // css!
 import css from "./Navbar.module.css";
+import "../index.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
     <>
       <nav className={css.navbar}>
@@ -24,8 +43,20 @@ const Navbar = () => {
             <li>Contact</li>
           </Link>
         </ul>
-        <div className="modoIcon">M</div>
+        <div className={css.menuIcon}>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
+        <div className={darkMode ? "app dark" : "app"}>
+          <FontAwesomeIcon
+            className="mode"
+            onClick={toggleDarkMode}
+            icon={darkMode ? faSun : faMoon}
+            size="x"
+          />
+        </div>
       </nav>
+
+      <hr className="hr" />
     </>
   );
 };

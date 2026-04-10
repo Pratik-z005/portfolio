@@ -8,6 +8,10 @@ import Footer from "../components/Footer";
 // react-router!
 import { Link } from "react-router-dom";
 
+// font awesome!
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRibbon } from "@fortawesome/free-solid-svg-icons";
+
 // css!
 import "../index.css";
 
@@ -28,22 +32,38 @@ const Home = () => {
       <br />
       <div className="container">
         <div className="box">
+          <div className="imgbox1">
+            <img className="realImg" src={myImg} alt="myImg" />
+          </div>
+
           <div className="info">
+            <hr className="hr" />
             <h1 className="brand">Hey, I'm Pratik!</h1>
             <br />
+            <hr className="hr" />
             <p className="objInfo">
               I'm a software engineer, open-source creator, and former
               professional chef. I've been making websites since 1998 and
               writing on this blog for over ten years! Everything on this site
-              is written by me, not AI.
+              is written by me, not AI. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Exercitationem, dolorem quae. Culpa, veniam
+              nobis. Delectus, sit animi! Temporibus, omnis laborum!
             </p>
             <Link className="links" to={"/about"}>
               <button className="btns">About Me</button>
             </Link>
+
+            <hr className="hr" />
           </div>
           <div className="imgbox">
             <img className="realImg" src={myImg} alt="myImg" />
           </div>
+        </div>
+
+        <div className="linez">
+          <div className="line"></div>
+          <FontAwesomeIcon icon={faRibbon} size="2x" />
+          <div className="line"></div>
         </div>
 
         <br />

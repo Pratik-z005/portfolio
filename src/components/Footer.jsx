@@ -24,7 +24,7 @@ const Footer = () => {
           <FontAwesomeIcon
             className="icons"
             icon={faGithub}
-            style={{ padding: "10px" }}
+            style={{ color: "#000", padding: "10px" }}
           />
         </a>
 
@@ -37,7 +37,7 @@ const Footer = () => {
           <FontAwesomeIcon
             className="icons"
             icon={faLinkedinIn}
-            style={{ padding: "10px" }}
+            style={{ color: "#000", padding: "10px" }}
           />
         </a>
 
