@@ -11,12 +11,20 @@ import "../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
 
+// component!
+import Sidebar from "./Sidebar";
+
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
 
   useEffect(() => {
     if (darkMode) {
@@ -44,8 +52,11 @@ const Navbar = () => {
           </Link>
         </ul>
         <div className={css.menuIcon}>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} onClick={toggleMenu} />
         </div>
+
+        <Sidebar isOpen={isOpen} />
+
         <div className={darkMode ? "app dark" : "app"}>
           <FontAwesomeIcon
             className="mode"
