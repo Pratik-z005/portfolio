@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: -250px;
-  width: 200px;
+  width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.441);
   color: inherit;
@@ -11,7 +11,7 @@
   z-index: 2;
 }
 .active {
-  left: 0;
+  left: 0px;
 }
 
 .sidebar ul {

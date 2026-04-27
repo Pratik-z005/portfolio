@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from "react";
 
 // components!
 import Navbar from "../components/Navbar";
@@ -25,6 +26,7 @@ import GhibliImg from "/src/assets/photos/ghibli.png";
 const Home = () => {
   const foodAppLink = "https://food-recipe-brown-one.vercel.app/";
   const ghibliAppLink = "https://my-ghibli-world.vercel.app/";
+
   return (
     <>
       <Navbar />
