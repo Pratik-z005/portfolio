@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // css!
 import css from "./ProjectCompo.module.css";
 
-const ProjectCompo = ({ pic, link, title }) => {
+const ProjectCompo = ({ pic, link, title, description }) => {
   return (
     <>
       <div className={css.container}>
@@ -18,10 +18,7 @@ const ProjectCompo = ({ pic, link, title }) => {
         <div className={css.infoContainer}>
           <h3>{title}</h3>
           <br />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
-            porro.
-          </p>
+          <p className={css.description}>{description}</p>
           <div className="siteLinks">
             <button className={css.grayBtns}>
               <Link className="links">Site</Link>

@@ -77,13 +77,21 @@ const Home = () => {
           title={"My Ghibli World"}
           pic={GhibliImg}
           link={ghibliAppLink}
+          description={
+            "The texts below are designed to help you develop while giving you an instant evaluation of your progress."
+          }
         />
         <ProjectCompo
           title={"Flavors of the World"}
           pic={FoodRecipeImg}
           link={foodAppLink}
+          description={`The texts below are designed to help you develop while giving you an instant evaluation of your progress.`}
         />
-        <ProjectCompo />
+        <ProjectCompo
+          description={
+            "The texts below are designed to help you develop while giving you an instant evaluation of your progress.The texts below are designed to help you develop while giving you an instant evaluation of your progress.The texts below are designed to help you develop while giving you an instant evaluation of your progress.The texts below are designed to help you develop while giving you an instant evaluation of your progress."
+          }
+        />
       </div>
 
       <Footer />
