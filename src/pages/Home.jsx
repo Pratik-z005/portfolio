@@ -23,6 +23,10 @@ import myImg from "/src/assets/photos/Pratik Black_Suit.jpeg";
 import FoodRecipeImg from "/src/assets/photos/food-black.png";
 import GhibliImg from "/src/assets/photos/ghibli.png";
 
+// project-demo!
+import FoodRecipeVideo from "/src/assets/video/demo_flavours_.mp4";
+import GhibliVideo from "/src/assets/video/final_ghibli_video.mp4";
+
 const Home = () => {
   const foodAppLink = "https://food-recipe-brown-one.vercel.app/";
   const ghibliAppLink = "https://my-ghibli-world.vercel.app/";
@@ -76,7 +80,8 @@ const Home = () => {
         <ProjectCompo
           title={"My Ghibli World"}
           pic={GhibliImg}
-          link={ghibliAppLink}
+          video={GhibliVideo}
+          linked={ghibliAppLink}
           description={
             "The texts below are designed to help you develop while giving you an instant evaluation of your progress."
           }
@@ -84,7 +89,8 @@ const Home = () => {
         <ProjectCompo
           title={"Flavors of the World"}
           pic={FoodRecipeImg}
-          link={foodAppLink}
+          video={FoodRecipeVideo}
+          linked={foodAppLink}
           description={`The texts below are designed to help you develop while giving you an instant evaluation of your progress.`}
         />
         <ProjectCompo
