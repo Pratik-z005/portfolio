@@ -12,7 +12,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
 
 // component!
-import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,11 +19,6 @@ const Navbar = () => {
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
-
-  const [isOpen, setIsOpen] = useState(false);
-  function toggleMenu() {
-    setIsOpen(!isOpen);
-  }
 
   useEffect(() => {
     if (darkMode) {
@@ -36,38 +30,34 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={css.navbar}>
-        <Link to={"/"} className={css.links}>
-          <div className={css.logo}>Pratik Kamble</div>
-        </Link>
-        <ul>
-          <Link to={"/about"} className={css.links}>
-            <li>About</li>
-          </Link>
+      <div className={css.fullWidth}>
+        <nav className={css.navbar}>
           <Link to={"/"} className={css.links}>
-            <li>Projects</li>
+            <span className={css.shortLogo}>pK</span>
+            <div className={css.logo}>Pratik Kamble</div>
           </Link>
-          <Link to={"/contact"} className={css.links}>
-            <li>Contact</li>
-          </Link>
-        </ul>
-        <div className={css.menuIcon}>
-          <FontAwesomeIcon icon={faBars} onClick={toggleMenu} />
-        </div>
+          <ul>
+            <Link to={"/about"} className={css.links}>
+              <li>About</li>
+            </Link>
+            <Link to={"/"} className={css.links}>
+              <li>Projects</li>
+            </Link>
+            <Link to={"/contact"} className={css.links}>
+              <li>Contact</li>
+            </Link>
+          </ul>
 
-        <Sidebar isOpen={isOpen} />
-
-        <div className={darkMode ? "app dark" : "app"}>
-          <FontAwesomeIcon
-            className="mode"
-            onClick={toggleDarkMode}
-            icon={darkMode ? faSun : faMoon}
-            size="x"
-          />
-        </div>
-      </nav>
-
-      <hr className="hr" />
+          <div className={darkMode ? "app dark" : "app"}>
+            <FontAwesomeIcon
+              className="mode"
+              onClick={toggleDarkMode}
+              icon={darkMode ? faSun : faMoon}
+              size="x"
+            />
+          </div>
+        </nav>
+      </div>
     </>
   );
 };
