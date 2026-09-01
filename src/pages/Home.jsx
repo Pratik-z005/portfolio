@@ -48,12 +48,11 @@ const Home = () => {
             <br />
             <hr className="hr" />
             <p className="objInfo">
-              I'm a software engineer, open-source creator, and former
-              professional chef. I've been making websites since 1998 and
-              writing on this blog for over ten years! Everything on this site
-              is written by me, not AI. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Exercitationem, dolorem quae. Culpa, veniam
-              nobis. Delectus, sit animi! Temporibus, omnis laborum!
+              I'm an aspiring Full-Stack Developer from India, passionate about
+              building, exploring, and learning through code. I enjoy turning
+              ideas into modern web experiences, solving problems, experimenting
+              with new technologies, and continuously sharpening my skills as I
+              grow.
             </p>
             <Link className="links" to={"/about"}>
               <button className="btns">About Me</button>
@@ -82,21 +81,18 @@ const Home = () => {
           pic={GhibliImg}
           video={GhibliVideo}
           linked={ghibliAppLink}
-          description={
-            "The texts below are designed to help you develop while giving you an instant evaluation of your progress."
-          }
+          description={`My Ghibli World is a Ghibli-focused movie discovery platform where users can explore films, characters, genres, favorites, music, quizzes, and other interactive Ghibli-themed features—all in one place.`}
         />
         <ProjectCompo
           title={"Flavors of the World"}
           pic={FoodRecipeImg}
           video={FoodRecipeVideo}
           linked={foodAppLink}
-          description={`The texts below are designed to help you develop while giving you an instant evaluation of your progress.`}
+          description={`Flavors of the World is a recipe discovery platform that brings popular dishes from around the globe into one place. Users can explore cuisines by country and category, search for recipes, discover what to cook for different occasions, and explore recipes through a simple, interactive interface.`}
         />
         <ProjectCompo
-          description={
-            "The texts below are designed to help you develop while giving you an instant evaluation of your progress.The texts below are designed to help you develop while giving you an instant evaluation of your progress.The texts below are designed to help you develop while giving you an instant evaluation of your progress.The texts below are designed to help you develop while giving you an instant evaluation of your progress."
-          }
+          title={`Gyanify — Smart India Hackathon (SIH)`}
+          description={`Gyanify is an offline, gamified learning platform designed for students in rural areas. It aims to make learning more accessible, interactive, and enjoyable for students, even with limited or no internet connectivity.`}
         />
       </div>
 
